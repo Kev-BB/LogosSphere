@@ -1,0 +1,178 @@
+body {
+  background-color: #fcf5e5;
+}
+
+.App {
+  text-align: start;
+  font-family: "Domine", serif;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.nav-container img {
+  height: 50px;
+}
+
+
+.cta {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  width: 80vw;
+  grid-template-areas: "a b";
+  align-items: center;
+}
+
+.cta-header {
+  font-size: 48px;
+}
+
+.posts-container {
+  width: 500px;
+  height: 500px;
+  grid-area: a;
+  justify-self: center;
+  align-self: end;
+}
+
+.post-card {
+  margin-top: 10px;
+}
+
+input {
+  width: 500px;
+  height: 35px;
+  border-radius: 25px;
+  border-style: none;
+  outline: 2px solid black;
+  padding-left: 10px;
+}
+
+.bust {
+  background-color: #ebd5b3;
+  border-radius: 75% 25% 68% 32% / 34% 56% 44% 66%;
+  padding: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+  .cta {
+    margin-top: 50px;
+    width: 300px;
+  }
+  input {
+    width: 250px;
+  }
+  .posts-container {
+    margin-top: 15px;
+    width: 250px;
+    height: 250px;
+    grid-row-start: 2;
+  }
+
+
+  .nav-list{
+    padding-left: 0rem
+  }
+  
+  .bust {
+    height: 300px;
+    grid-row-start: 1;
+  }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+  .cta {
+    margin-top: 50px;
+    width: 300px;
+  }
+  input {
+    width: 250px;
+  }
+  .posts-container {
+    margin-top: 15px;
+    width: 250px;
+    height: 250px;
+    grid-row-start: 2;
+  }
+
+
+  .nav-list{
+    padding-left: 0rem
+  }
+  
+  .bust {
+    height: 300px;
+    grid-row-start: 1;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+  .cta {
+    margin-top: 50px;
+    width: 55vw;
+  }
+  input {
+    width: 500px;
+  }
+  .posts-container {
+    margin-top: 15px;
+    grid-row-start: 2;
+  }
+
+  .bust {
+    height: 500px;
+    grid-row-start: 1;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+  .cta {
+    margin-top: 50px;
+   column-gap: 20px;
+   width: 100vw;
+   padding: 20px;
+  }
+
+  input {
+    width: 400px;
+  }
+
+  .posts-container {
+    margin-top: 15px;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .bust {
+    height: 58px;
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width:1201px) and (max-width:1440px) {
+  .cta {
+    margin-top: 50px;
+   column-gap: 20px;
+   width: 100vw;
+  }
+
+  input {
+    width: 400px;
+  }
+
+  .posts-container {
+    padding-top: 100px;
+  }
+  
+  .bust {
+    height: 600px;
+    margin-right: 25px;
+  }
+}
