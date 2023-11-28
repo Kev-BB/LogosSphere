@@ -43,9 +43,10 @@ export const Dictionary = () => {
             onChange={handleChange}
           />
       </form>
-      {items.map((item,index) => {
+      {items.map((item) => {
+         const id = crypto.randomUUID();
         return (
-            <Card className="post-card" key={index}>
+            <Card className="post-card" key={id}>
             <Card.Header>Result</Card.Header>
             <Card.Body>
               <Card.Title>  {item.word}
